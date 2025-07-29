@@ -24,5 +24,7 @@ public class init {
             log.info("Usuario Descripcion: {}", usuario.get().getDescripcion());
             log.info("Usuario Categoria: {}", usuario.get().getCategoria());
         }
+
+        usuarioService.guardar();
     }
 }

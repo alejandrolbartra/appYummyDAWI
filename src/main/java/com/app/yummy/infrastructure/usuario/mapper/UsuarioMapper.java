@@ -11,12 +11,13 @@ public interface UsuarioMapper {
     @Mapping(target = "usuarioid", source = "usuarioid")
     @Mapping(target = "nombre", source = "nombre")
     @Mapping(target = "descripcion", source = "descripcion")
-    @Mapping(target = "categoria", expression = "java(mapCategoria(entity.getNombre()))")
+    //@Mapping(target = "categoria", expression = "java(mapCategoria(entity.getNombre()))")
+
      // roles se manejan aparte
     UsuarioModel usuarioMap(UsuarioEntity entity);
 
-    default String mapCategoria(String nombre){
-        return nombre.contains("Lu")?"Admin":"Usuario";
-    }
+    //default String mapCategoria(String nombre){
+   //     return nombre.contains("Lu")?"Admin":"Usuario";
+    //}
 
 }

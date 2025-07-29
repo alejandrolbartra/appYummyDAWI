@@ -6,4 +6,7 @@ import java.util.Optional;
 
 public interface UsuarioService {
     Optional<UsuarioModel> buscarUsuario(Long usuarioId);
+
+    UsuarioModel guardar();
+
 }
